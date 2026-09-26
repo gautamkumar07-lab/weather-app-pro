@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather App Pro</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🌦 Weather App Pro</h1>
+
+    <!-- Dark Mode -->
+    <button onclick="toggleDarkMode()">
+        🌙 Dark Mode
+    </button>
+
+    <!-- Search -->
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="city"
+        placeholder="Enter City Name">
+
+        <button onclick="getWeather()">
+            Search
+        </button>
+
+        <button onclick="getLocationWeather()">
+            📍 My Location
+        </button>
+
+    </div>
+
+    <!-- Weather Card -->
+
+    <div class="weather-card">
+
+        <h2 id="cityName">
+            City
+        </h2>
+
+        <img
+        id="weatherIcon"
+        width="100">
+
+        <h1 id="temp">
+            0°C
+        </h1>
+
+        <p id="description">
+            Weather Description
+        </p>
+
+    </div>
+
+    <!-- Details -->
+
+    <div class="details">
+
+        <div class="card">
+            💧 Humidity
+            <h3 id="humidity">0%</h3>
+        </div>
+
+        <div class="card">
+            🌬 Wind Speed
+            <h3 id="wind">0 km/h</h3>
+        </div>
+
+        <div class="card">
+            🌡 Feels Like
+            <h3 id="feelsLike">0°C</h3>
+        </div>
+
+        <div class="card">
+            👁 Visibility
+            <h3 id="visibility">0 km</h3>
+        </div>
+
+        <div class="card">
+            🌅 Sunrise
+            <h3 id="sunrise">--</h3>
+        </div>
+
+        <div class="card">
+            🌇 Sunset
+            <h3 id="sunset">--</h3>
+        </div>
+
+    </div>
+
+    <!-- Forecast -->
+
+    <h2>
+        5 Day Forecast
+    </h2>
+
+    <div id="forecast">
+
+    </div>
+
+    <!-- Recent Search -->
+
+    <h2>
+        Recent Searches
+    </h2>
+
+    <ul id="recentSearches">
+
+    </ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
